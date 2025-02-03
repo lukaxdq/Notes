@@ -6,12 +6,12 @@
 class Note {
 public:
     Note();
-    Note(const std::string& content);
-    std::string getContent() const;
-    void setContent(const std::string& content);
+    Note(const std::wstring& content);
+    std::wstring getContent() const;
+    void setContent(const std::wstring& content);
 
 private:
-    std::string content;
+    std::wstring content;
 };
 
 #endif // NOTE_H

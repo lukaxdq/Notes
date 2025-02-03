@@ -1,13 +1,13 @@
-#include "Note.h"
+#include "note.h"
 
-Note::Note() : content("") {}
+Note::Note() : content(L"") {}
 
-Note::Note(const std::string& content) : content(content) {}
+Note::Note(const std::wstring& content) : content(content) {}
 
-std::string Note::getContent() const {
+std::wstring Note::getContent() const {
     return content;
 }
 
-void Note::setContent(const std::string& content) {
+void Note::setContent(const std::wstring& content) {
     this->content = content;
 }
